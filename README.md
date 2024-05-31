@@ -1,6 +1,10 @@
-# RP24-DectionMode-Temp
+# RP24-DectionMode-Temp  
+为促进新队伍视觉技术快速成长，老队伍不再固步自封，现开源RobotPilots视觉自瞄网络模型  
+
+该模型的识别能力教强，能够缩小与强队之间的视觉识别GAP
+
 ---
-使用Openvino GPU推理，帧率可达125FPS
+backbone网络采用MobieNetV3，使用Openvino GPU推理，帧率可稳定125FPS（NUC12,实测NUC13更快，且NUC13更便宜)
 
 Openvino代码仅供参考，不一定能跑（老东西已无力维护）
 
