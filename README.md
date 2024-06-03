@@ -1,4 +1,4 @@
-# RP24-DectionMode-Temp  
+# RP24-DetectionMode-Temp  
 
 此文档还在填坑中，打完分区赛再继续完善
 
