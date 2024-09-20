@@ -6,7 +6,7 @@
 
 训练机器：AutoDL 4x4090以及队里的一台4090
 
-训练数据集含约1万5000张高质量数据集，backbone网络采用MobieNetV3，使用Openvino GPU推理，纯推理帧率可稳定100FPS
+从约15K张高质量数据集训练而来，backbone网络采用MobieNetV3，使用Openvino GPU推理，纯推理帧率可稳定100FPS
 
 
 ---
