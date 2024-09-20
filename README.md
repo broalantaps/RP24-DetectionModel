@@ -31,9 +31,11 @@ Step 1: Download the GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB. You can also use the fol
 wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB  
 Step 2: Add this key to the system keyring  
 sudo apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB  
-Step 3: Add the repository via the following command  
+Step 3: Add the repository via the following command
+
 Ubuntu 22  
 echo "deb https://apt.repos.intel.com/openvino/2024 ubuntu22 main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2024.list  
+
 Ubuntu 20  
 echo "deb https://apt.repos.intel.com/openvino/2024 ubuntu20 main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2024.list  
 Step 4: Update the list of packages via the update command  
