@@ -1,15 +1,11 @@
-# RP24-DetectionMode-Temp  
-
-此文档还在填坑中，打完分区赛再继续完善
+# RP24-DetectionMode
 
 ---
 
-为促进新队伍视觉技术快速成长，老队伍不再固步自封，现开源RobotPilots视觉自瞄网络模型  
-
-该模型的识别能力较强，能够缩小与强队之间的视觉识别GAP
+RobotPilots视觉自瞄网络模型  
 
 ---
-backbone网络采用MobieNetV3，使用Openvino GPU推理，纯推理帧率可稳定125FPS
+训练数据集含约1万5000张高质量数据集，backbone网络采用MobieNetV3，使用Openvino GPU推理，纯推理帧率可稳定100FPS
 
 设备：NUC12WSKi7，内存条2x16G 3200MHz
 
@@ -77,13 +73,11 @@ Step 6: Install OpenVINO Runtime
 sudo apt install openvino-2024.0.0  
 
 
-Openvino代码仅供参考，不一定能跑（老东西已无力维护）
+Openvino代码仅供参考
 
 ---
 
 输出：0到8是四个关键点，顺序从左上角开始逆时针；9到13是颜色（红蓝灰紫），13到22是数字  
-
-
 
 G（哨兵）
 1（一号）
@@ -110,3 +104,5 @@ Bb（基地大装甲）
 
 链接：https://pan.baidu.com/s/1hkM0rZQneXRZiHC24oldig?pwd=RP24
 提取码：RP24    
+
+全国赛效果也挺好的，哨兵没看到误识别
