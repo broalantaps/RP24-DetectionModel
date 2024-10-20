@@ -1,16 +1,24 @@
-# RP24-DetectionMode
+# RP24-DetectionModel
 
 **RobotPilots视觉自瞄网络模型**
 
-设备：NUC12WSKi7，内存条2x16G 3200MHz
+## 1 Environment
 
-训练机器：AutoDL 4x4090以及队里的一台4090
+**推理设备：** NUC12WSKi7，内存条2x16G 3200MHz
 
-从约15K张高质量数据集训练而来，魔改Yolov5，backbone网络采用MobieNetV3，使用Openvino GPU推理，纯推理帧率可稳定100FPS
+**训练设备：** AutoDL-4x4090以及队里的一台4090
 
----
+**软件环境：** OpenVino（具体安装流程在下方）
 
-输出：0到8是四个关键点，顺序从左上角开始逆时针；9到13是颜色（红蓝灰紫），13到22是数字  
+## 2 Detail
+
+**Datasets：** 从约15K张高质量数据集
+
+**Network：** 魔改Yolov5，backbone网络采用MobieNetV3，使用Openvino GPU推理，纯推理帧率可稳定100FPS
+
+**Output：**
+
+0到8是四个关键点，顺序从左上角开始逆时针；9到13是颜色（红蓝灰紫），13到22是数字  
 
 G（哨兵）
 1（一号）
@@ -50,6 +58,7 @@ Bb（基地大装甲）
 **3、模型效果不好可以期待一手下赛季的开源**
 
 ---
+
 **Openvino安装参考：**
 
 Openvino版本：24（23也行）
