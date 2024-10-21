@@ -88,11 +88,12 @@ sudo apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
 
 Step 3: Add the repository via the following command
 
+
 Ubuntu 22  
-echo "deb https://apt.repos.intel.com/openvino/2024 ubuntu22 main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2024.list  
+ > echo "deb https://apt.repos.intel.com/openvino/2024 ubuntu22 main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2024.list  
 
 Ubuntu 20  
-echo "deb https://apt.repos.intel.com/openvino/2024 ubuntu20 main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2024.list  
+ > echo "deb https://apt.repos.intel.com/openvino/2024 ubuntu20 main" | sudo tee /etc/apt/sources.list.d/intel-openvino-2024.list  
 Step 4: Update the list of packages via the update command  
 sudo apt update  
 
