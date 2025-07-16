@@ -2,6 +2,9 @@
 
 **RobotPilots视觉自瞄网络模型**
 
+**🥶2025-07-16:**
+**我们的新Model训练遇到一些麻烦，因此推迟Model的Release，望谅解🙏**
+
 **🔥2025-03-19:**
 **将会在分区赛之后更新Model～**
 
@@ -112,7 +115,3 @@ Step 6: Install OpenVINO Runtime
 ```python
 sudo apt install openvino-2024.0.0
 ```  
-
-
-**Openvino代码仅供参考**
-
